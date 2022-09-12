@@ -27,8 +27,8 @@
     --bg-color: #2F303A;
     --button-color: #F5F4FA;
     --hero-button: #188CE8;
-    --header-line: #ECECEC
-
+    --header-line: #ECECEC;
+    --card-border:  #EEEEEE;
 }
 
 /* Default settings turn off */
@@ -65,6 +65,8 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .list {
@@ -90,9 +92,8 @@ img {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-        outline: 2px solid tomato;
-
 }
+
 .logo-header {color: var(--secondary-color);}
 .logo-footer {color: var(--white-color);}
 
@@ -118,8 +119,6 @@ img {
 margin-left: auto;
 }
 
-
-
 .nav-list a,
 .contacts-list a {
     display: block;
@@ -130,8 +129,6 @@ margin-left: auto;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-        outline: 2px solid tomato;
-
 }
 
 .list a:hover,
@@ -161,7 +158,7 @@ margin-left: auto;
     text-align: center;
     background-color: var(--bg-color);
     color: var(--white-color);
-    outline: 2px solid tomato;
+
 
     /* Mentor`s notes - FIXED */
     /* font-weight: 900;
@@ -180,7 +177,6 @@ margin-left: auto;
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    outline: 2px solid tomato;
 }
 
 /* Buttons */
@@ -189,10 +185,10 @@ button {
     font-family: inherit;
     cursor: pointer;
     border-radius: 4px;
-    outline: 2px solid tomato;
 }
 
 .hero-button {
+    padding: 10px 32px;
     color: var(--white-color);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -208,12 +204,14 @@ button {
 }
 
 .portfolio-button {
+    padding: 6px 22px;
     color: var(--primary-color);
     background-color: var(--button-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    border-color: transparent;
 }
 
 .portfolio-button:hover,
@@ -240,7 +238,6 @@ button {
 
 .titles {
     color: var(--primary-color);
-    outline: 2px solid tomato;
 }
 
 .occupation-title,
@@ -269,15 +266,12 @@ button {
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    outline: 2px solid tomato;
 }
 
 .feature-text {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-        outline: 2px solid tomato;
-
 }  
 
 /* What-we-do Section */
@@ -331,10 +325,39 @@ button {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    outline: 2px solid tomato;
 }
 
 /* Portfolio Section */
+
+.btn-set {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 94px;
+    padding-bottom: 34px;
+}
+
+.container > .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.card-set > .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.card-name {
+    padding: 20px 24px;
+    background-color: var(--white-color);
+    border: 1px solid var(--card-border);
+    border-top: 0;
+
+}
 
 .portfolio-title {
     font-weight: 700;
@@ -344,28 +367,29 @@ button {
 }
 
 .portfolio-text {
+    margin-top: 4px;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    outline: 2px solid tomato;
 }
 
 /* Footer */
 .footer-styles {
     background-color: var(--bg-color);
-    outline: 2px solid tomato;
 }
 
 .container.footer {
     justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-div {
-padding-top: 60px;
-padding-bottom: 20px;}
+/* margin-top: 60px; */
+margin-bottom: 20px;}
 
 .logo-accent {
- padding: 0;
+    padding: 0;
 }
 
 .footer-address {
@@ -375,20 +399,25 @@ padding-bottom: 20px;}
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    outline: 2px solid tomato;
 }
 
-.footer-contacts a {
+/* .footer-list:last-child {
+    margin-top: 9px;
+} */
+
+.footer-item {
     margin-bottom: 9px;
 }
+.footer-item:last-child {
+    margin-bottom: 0;
+}
 
-.footer-contacts {
-    padding-top: 4px;
-    padding-bottom: 4px;
+.footer-contacts {    
+    /* padding-top: 4px;
+    padding-bottom: 4px; */
     color: var(--white-opacity);
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    outline: 2px solid tomato;
 }
