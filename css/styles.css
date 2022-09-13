@@ -155,6 +155,7 @@ margin-left: auto;
 /* Hero Section */
 
 .hero-section {
+    padding: 200px 0;
     text-align: center;
     background-color: var(--bg-color);
     color: var(--white-color);
@@ -254,6 +255,10 @@ button {
     display: flex;
 }
 
+.feature-section {
+    padding-bottom: 0;
+}
+
 .feature-list {
     display: flex;
     gap: 30px;
@@ -329,18 +334,24 @@ button {
 
 /* Portfolio Section */
 
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .btn-set {
     display: flex;
     justify-content: center;
     gap: 8px;
-    padding-top: 94px;
-    padding-bottom: 34px;
+    /* padding-top: 94px; */
+    /* padding-bottom: 34px; */
+    margin-bottom: 50px;
 }
 
 .container > .card-set {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
+    /* padding-bottom: 94px; */
     margin-left: -30px;
     margin-top: -30px;
 }
@@ -375,13 +386,14 @@ button {
 
 /* Footer */
 .footer-styles {
+    padding: 60px 0;
     background-color: var(--bg-color);
 }
 
 .container.footer {
     justify-content: flex-start;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
 }
 
 .logo-div {
